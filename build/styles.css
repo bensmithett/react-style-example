@@ -1,0 +1,17 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+.Profile__css_____a { background-color: green; font-style: italic; }
+.Profile__css__subcomponent_____b { background-color: blue; color: white; }
