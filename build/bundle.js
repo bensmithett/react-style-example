@@ -69,17 +69,32 @@
 	var ReactStyle = __webpack_require__(9);
 	 
 	var Profile = React.createClass({displayName: 'Profile',
-	  css: ReactStyle(function css() {
-	    return "Profile__css_____a";
-	  }),
-	  css__subcomponent: ReactStyle(function css__subcomponent() {
-	    return "Profile__css__subcomponent_____b";
-	  }),
+	  // css: ReactStyle(function () {
+	  //   return {
+	  //     backgroundColor: "green",
+	  //     fontStyle: "italic"
+	  //   };
+	  // }),
+	  // css__subcomponent: ReactStyle(function () {
+	  //   return {
+	  //     backgroundColor: "blue",
+	  //     color: "white"
+	  //   };
+	  // }),
+
+	  css: {
+	    main: ReactStyle(function main() {
+	      return "Profile";
+	    }),
+	    subcomponent: ReactStyle(function subcomponent() {
+	      return "Profile-Subcomponent";
+	    }),
+	  },
 	 
 	  render: function () {
 	    return(
-	      React.DOM.div({styles: this.css()}, 
-	        "This is a ", React.DOM.b({styles: this.css__subcomponent()}, "Rad Component!!!")
+	      React.DOM.div({styles: this.css.main()}, 
+	        "This is a ", React.DOM.b({styles: this.css.subcomponent()}, "Rad Component!!!")
 	      )
 	    );
 	  }

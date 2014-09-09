@@ -13,5 +13,5 @@ body {
   height: 100%;
   margin: 0;
 }
-.Profile__css_____a { background-color: green; font-style: italic; }
-.Profile__css__subcomponent_____b { background-color: blue; color: white; }
+.Profile { background-color: green; font-style: italic; }
+.Profile-Subcomponent { background-color: blue; color: white; }
